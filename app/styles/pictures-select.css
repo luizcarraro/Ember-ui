@@ -1,0 +1,177 @@
+.kv-avatar .file-preview-frame,.kv-avatar .file-preview-frame:hover {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+.kv-avatar .file-input {
+    display: table-cell;
+    max-width: 220px;
+}
+
+// ---------------------------------
+
+.picture-uploader {
+    min-height: 140px;
+}
+
+.picture-uploader-preview {
+    cursor: pointer;
+}
+
+.picture-uploader {
+    margin-top: 20px;
+    position: relative;
+    max-width: 1024px;
+}
+.picture-uploader, .picture-uploader *, .picture-uploader :after, .picture-uploader :before {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.picture-uploader .picture-uploader-preview>ul {
+    position: relative;
+    overflow: visible;
+    list-style: none;
+}
+
+.picture-uploader.six-pack .picture-uploader-preview>ul li[data-picture-status=loading]:first-of-type, .picture-uploader.six-pack .picture-uploader-preview>ul li[data-picture-status=off]:first-of-type, .picture-uploader.six-pack .picture-uploader-preview>ul li[data-picture-status=on]:first-of-type {
+    top: 0;
+  }
+.picture-uploader-preview li .picture-uploader-add {
+    bottom: 13%;
+}
+
+.picture-uploader-preview .picture-uploader-add {
+    font-size: 13px;
+    line-height: 12px;
+    color: #bbb;
+    position: absolute;
+    bottom: 12%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.hover-dark {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+}
+.hover-dark:hover {
+    background-color: rgba(21, 14, 14, 0.69);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+}
+
+.picture-uploader-preview .picture-uploader-del {
+    font-size: 13px;
+    color: #bbb;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.picture-uploader-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 100%;
+}
+
+.picture-uploader, .picture-uploader *, .picture-uploader :after, .picture-uploader :before {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.variations, .variations *, .variations :after, .variations :before {
+    box-sizing: border-box;
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, big, cite, code, del, em, img, ins, q, s, small, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, audio, canvas, datalist, details, dialog, figure, footer, header, mark, menu, meter, nav, output, progress, section, time, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+div {
+    display: block;
+}
+
+.picture-uploader-preview li {
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+    width: 31%;
+    position: relative;
+    border: 1px dashed #bbb !important;
+    height: 0;
+    padding-bottom: 31%;
+    margin-bottom: 5px;
+    margin-right: 2%;
+    background-size: 42%;
+    image-rendering: -webkit-optimize-contrast;
+}
+.picture-uploader-preview li.no-image {
+    background: #fff url('/images/produto-sem-imagem.png') no-repeat center 35%;
+}
+
+a.ch-close, a.ch-close:focus, a.ch-close:visited {
+    color: #ccc;
+}
+.picture-uploader-controls .ch-close {
+    line-height: 16px;
+}
+.picture-uploader-controls .ch-hide {
+    /*display: none;*/
+}
+.picture-uploader-controls .ch-close {
+    color: #ccc;
+    top: 5px;
+    right: 5px;
+    background-color: #fff;
+    line-height: 21px;
+}
+.ch-close, .ch-close:visited, .ch-close:focus {
+    /*width: 15px;*/
+    /*height: 16px;*/
+    font-size: 12px;
+    line-height: 16px;
+}
+.ch-close, .ch-close:visited, .ch-close:focus {
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(transparent 15%,rgba(100,100,100,.1));
+    background-image: -moz-linear-gradient(transparent 15%,rgba(100,100,100,.1));
+    background-image: -o-linear-gradient(transparent 15%,rgba(100,100,100,.1));
+     background-image: linear-gradient(transparent 15%,rgba(100,100,100,.1)); 
+     border: 1px solid #DEDEDE; 
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0;
+    text-indent: 1px;
+    color: #CCC;
+    font-family: Arial;
+    font-style: normal;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    -webkit-appearance: none;
+    z-index: 1;
+}

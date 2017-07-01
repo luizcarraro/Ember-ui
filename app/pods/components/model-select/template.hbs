@@ -1,0 +1,10 @@
+{{#unless default}}
+  <option selected=true disabled=true>
+    Selecione
+  </option>
+{{/unless}}
+{{#each options as |option|}}
+  <option value={{option.id}} selected={{is-equal option.id default.id}}>
+    {{option.name}}
+  </option>
+{{/each}}

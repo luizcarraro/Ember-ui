@@ -1,0 +1,15 @@
+{{#if isEditing}}
+  <form {{action 'save' model on='submit'}} class="form-inline">
+    <div class="input-group">
+      {{input value=value class='form-control'}}
+      <div class="input-group-btn">
+        <button type="submit" class="btn btn-success" disabled={{model.isNotValid}}>Salvar</button>
+        <button class="btn btn-danger" {{action 'cancel' model}}>Cancelar</button>
+      </div>
+    </div>
+  </form>
+{{else}}
+  	<span class="input-value" {{action 'edit' model}}>
+      {{value}} <i class="fa fa-pencil" style="display:none"></i>
+    </span>
+{{/if}}
